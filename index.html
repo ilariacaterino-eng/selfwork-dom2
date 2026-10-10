@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="customBgColor">
+<div class="container">
+    <div class="row justify-content-center min-vh-100 align-items-center">
+      <div class="col-md-8 col-lg-6">
+        
+        <!-- Card principale -->
+         
+        <div class="card border rounded-4 shadow-sm p-4 mb-4 bg-white">
+          <h1 class="h3 mb-4 customTextColor">Crea un Articolo</h1>
+
+          <!-- Form di Inserimento -->
+          <div class="mb-3">
+            <label for="titleInput" class="form-label fw-bold">Titolo:</label>
+            <input type="text" id="titleInput" class="form-control rounded-3" placeholder="Inserisci il titolo...">
+          </div>
+
+          <div class="mb-3">
+            <label for="contentInput" class="form-label fw-bold">Paragrafo:</label>
+            <textarea id="contentInput" class="form-control rounded-3" rows="5" placeholder="Inserisci il testo dell'articolo..."></textarea>
+          </div>
+          <!-- bottone -->
+          <button id="createBtn" class="btn btnCustomColor rounded-3 w-100">Crea Articolo</button>
+        </div>
+
+        <hr class="my-4 customColorBorder">
+
+        <!-- Contenitore per gli articoli creati -->
+        <section id="articlesContainer">
+          <h2 class="h4 mb-3 customTextColor">Articoli Pubblicati</h2>
+          
+          <!-- Esempio statico di come apparirà una card articolo creata via JS -->
+          <article class="card border rounded-4 p-3 mb-3 bg-light">
+            <h3  id="title" class="h5 card-title">Titolo di esempio</h3>
+            <p id="paragraph" class="card-text mb-0 customText">Questo è il testo del paragrafo dell'articolo creato.</p>
+          </article>
+        </section>
+
+      </div>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

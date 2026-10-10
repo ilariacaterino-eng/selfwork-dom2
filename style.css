@@ -1,0 +1,36 @@
+body{
+    font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.customText{
+    font-weight: 300;
+}
+
+.customBgColor{
+    background-color: rgb(217, 194, 238);
+}
+.customTextColor{
+    color: blueviolet;
+}
+.btnCustomColor{
+    background-color: blueviolet;
+    color: white;
+}    
+.btnCustomColor2{
+    background-color: blueviolet;
+    color: white;    
+}
+.btnCustomColor:hover{
+    background-color: white;
+    color: blueviolet;
+    border-color: blueviolet;
+}
+.btnCustomColor2:hover{
+    background-color: white;
+    color: blueviolet;
+    border-color: blueviolet;
+}
+.customColorBorder{
+    border-color: blueviolet;
+}
